@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(185, 75%, 39%);
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(images/bg-pattern-bottom.svg),
+    url(images/bg-pattern-top.svg);
+  background-position: -25% -280%, top 420% right -20%;
+  background-repeat: no-repeat;
+}
+
+.card__container {
+  max-width: 326px;
+  max-height: 374px;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.top__image {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.profile__image {
+  border-radius: 50%;
+  position: absolute;
+  height: 96px;
+  width: 96px;
+  top: 5.75rem;
+  left: 7.188rem;
+  right: 7.188rem;
+  border: solid 5px #ffffff;
+}
+
+.profile__name {
+  margin-top: 4.5rem;
+  padding-bottom: 1.563rem;
+  border-bottom: solid 1px #e8e9ec;
+}
+
+.name {
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+
+.age {
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: hsl(227, 10%, 46%);
+  margin-left: 0.594rem;
+}
+
+.location {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+
+.card__description {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.25rem 3.125rem 1.5rem 3.125rem;
+}
+
+.data {
+  font-size: 1.125rem;
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.data__description {
+  color: hsl(227, 10%, 46%);
+  font-size: 0.625rem;
+  font-weight: 400;
+}
+
+@media (min-width: 1440px) {
+  main {
+    background-image: url(images/bg-pattern-top.svg),
+      url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: top 325% left -65%, bottom 435% right -45%;
+  }
+  .card__container {
+    max-width: 350px;
+  }
+  .profile__image {
+    top: 5.75rem;
+    left: 7.938rem;
+    right: 7.938rem;
+  }
+}
